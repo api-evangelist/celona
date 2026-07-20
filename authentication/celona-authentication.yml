@@ -1,0 +1,24 @@
+generated: '2026-07-18'
+method: searched
+source: http://docs.celona.io/en/articles/5471140-introduction-to-celona-apis
+docs: http://docs.celona.io/en/articles/5467418-celona-network-monitoring-api-how-to
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  oauth2_flows: []
+schemes:
+- name: ApiKeyAuth
+  type: apiKey
+  in: header
+  parameter_name: X-API-Key
+  description: >-
+    All Celona Orchestrator API operations require a valid API key sent in the
+    X-API-Key request header. Keys are generated per user in the Orchestrator
+    (user icon > API Keys > GENERATE KEY). The key value is shown once and is not
+    recoverable afterward. Requests without a valid key are rejected (HTTP 403).
+  sources:
+  - docs
+notes:
+- API keys are generated in the Celona Orchestrator UI; there is no OAuth client-credentials or token-exchange flow documented for the public API.
+- API access can be restricted to specific Device Groups (see docs article 8096652).
+- The Orchestrator web application (cso.celona.io) additionally supports SSO/SAML (Okta, Azure) and MFA for interactive user login; that is separate from the X-API-Key used for REST API calls.
