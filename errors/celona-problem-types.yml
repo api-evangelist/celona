@@ -1,0 +1,29 @@
+generated: '2026-07-18'
+method: searched
+source: http://docs.celona.io/en/articles/13613033-events-api-documentation
+format: custom-json
+envelope:
+  fields: [code, success, data, error]
+  notes: >-
+    Celona API responses are not RFC 9457 problem+json. Every response carries a
+    numeric code mirroring the HTTP status, a success boolean, a data object, and
+    an error field (null on success, populated on failure).
+problems:
+- status: 200
+  title: Success
+  meaning: Request succeeded; data object returned.
+- status: 400
+  title: Bad Request
+  meaning: Invalid parameters or malformed request.
+  remediation: Verify required query parameters (customer_id, startTime, endTime, pageSize) and JSON body.
+  source_operation: POST /v2/api/events/query
+- status: 403
+  title: Forbidden
+  meaning: Invalid or missing authentication credentials.
+  remediation: Supply a valid X-API-Key header; regenerate the key in the Orchestrator if needed.
+- status: 500
+  title: Internal Server Error
+  meaning: Server-side error occurred.
+  remediation: Retry later; contact Celona support if the error persists.
+notes:
+- The Events API documents 200/400/403/500. Other Orchestrator endpoints share the same code/success/error envelope.

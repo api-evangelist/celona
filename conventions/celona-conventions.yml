@@ -1,0 +1,52 @@
+generated: '2026-07-18'
+method: searched
+source: http://docs.celona.io/en/collections/3911889-developer-documentation
+summary: >-
+  Cross-cutting request/response conventions for the Celona Orchestrator REST API,
+  captured from the developer documentation.
+authentication:
+  style: api-key-header
+  header: X-API-Key
+  ref: authentication/celona-authentication.yml
+base_urls:
+- https://api.celona.io
+- https://cso.celona.io
+content_type: application/json
+versioning:
+  scheme: uri-path
+  versions: [v1, v2]
+  current: v2
+  example: /v2/api/events/query
+  ref: lifecycle/celona-lifecycle.yml
+pagination:
+  style: page-index
+  params:
+    page_size: pageSize
+    page_index: pageIndex
+    order: order
+  notes: >-
+    Events v2 query uses pageSize (min 1, max 1000), pageIndex (default 1) and
+    order (ascending|descending, default descending). The Audit Logs API uses the
+    hyphenated variants page-size, page-index, sort-columns, sort-direction.
+  response_fields:
+    count: data.count
+    filtered: data.filtered
+    records: data.records
+time_parameters:
+  style: unix-epoch-milliseconds
+  params: [startTime, endTime]
+  notes: Start/end times are integer Unix timestamps in milliseconds. Audit Logs uses start-time / end-time.
+error_envelope:
+  shape: custom-json
+  fields: [code, success, data, error]
+  example: '{ "code": 200, "success": true, "data": { "count": 0, "filtered": 0, "records": [] }, "error": null }'
+  ref: errors/celona-problem-types.yml
+idempotency:
+  supported: false
+  notes: No idempotency-key header or safe-retry contract is documented for write operations.
+rate_limiting:
+  documented: false
+  notes: No rate-limit headers or published quotas were found in the developer documentation.
+scoping:
+  device_group_restriction: true
+  notes: API keys can be restricted to specific Device Groups (docs article 8096652).

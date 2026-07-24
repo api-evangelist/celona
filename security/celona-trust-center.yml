@@ -1,0 +1,14 @@
+generated: '2026-07-18'
+method: searched
+probe: true
+source: https://www.celona.io/security
+url: https://www.celona.io/security
+certifications:
+- SOC 2
+- GDPR
+evidence:
+- source: https://www.celona.io/security
+  keywords:
+  - soc 2
+  - soc2
+  - gdpr

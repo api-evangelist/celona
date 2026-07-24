@@ -1,8 +1,15 @@
 aid: celona
 name: Celona
-description: Celona is a company surfaced as a portfolio company of lightspeed-venture-partners, norwest-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Celona provides enterprise private 5G and LTE cellular networking that connects
+  where Wi-Fi cannot reach. The platform combines Celona Edge appliances, indoor and
+  outdoor 5G Access Points, and the cloud-delivered Celona Orchestrator (CSO) for
+  zero-touch provisioning, policy, and lifecycle management over CBRS and shared
+  spectrum. Celona exposes a REST API surface through the Orchestrator for network
+  monitoring, event querying, device experience, system status (Edge and Access Point
+  CPU, memory, and uptime), and account audit logs, authenticated with an X-API-Key
+  generated in the Orchestrator. It serves manufacturing, logistics, healthcare, higher
+  education, oil and gas, and other industries needing mission-critical wireless.
 url: https://raw.githubusercontent.com/api-evangelist/celona/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +18,50 @@ x-backed-by:
 - norwest-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://cdn.prod.website-files.com/5e3277d251fd9e4b90615367/6450b4ba92a91d1652d39d1a_Home.png
 tags:
 - Company
-apis: []
+- Networking
+- Private Cellular
+- 5G
+- LTE
+- CBRS
+- Wireless
+- Network Monitoring
+- Telecommunications
+- IoT
+apis:
+- name: Celona API
+  description: >-
+    Celona Orchestrator REST API for network monitoring, event querying, device
+    experience, system status, and audit logs. Authenticated with an X-API-Key
+    generated in the Orchestrator.
+  humanURL: http://docs.celona.io/en/collections/3911889-developer-documentation
+  baseURL: https://api.celona.io
+  properties:
+  - type: Documentation
+    url: http://docs.celona.io/en/collections/3911889-developer-documentation
+  - type: Authentication
+    url: authentication/celona-authentication.yml
+  - type: Webhooks
+    url: asyncapi/celona-events-webhooks.yml
+  - type: ErrorCatalog
+    url: errors/celona-problem-types.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +70,58 @@ maintainers:
 common:
 - type: Website
   url: https://celona.io
+- type: DeveloperPortal
+  url: http://docs.celona.io/en/collections/3911889-developer-documentation
+- type: Documentation
+  url: http://docs.celona.io/en/
+- type: APIReference
+  url: http://docs.celona.io/en/articles/13613033-events-api-documentation
+- type: GettingStarted
+  url: http://docs.celona.io/en/articles/5471140-introduction-to-celona-apis
+- type: Support
+  url: https://support.celona.io/
+- type: Blog
+  url: https://www.celona.io/private-mobile-network-blog
+- type: Login
+  url: https://cso.celona.io/auth/login
+- type: TermsOfService
+  url: https://www.celona.io/terms
+- type: PrivacyPolicy
+  url: https://www.celona.io/privacy
+- type: StatusPage
+  url: https://status.celona.io
+- type: Deprecation
+  url: http://docs.celona.io/en/articles/7828531-api-endpoints-for-events
+- type: Authentication
+  url: authentication/celona-authentication.yml
+- type: Conventions
+  url: conventions/celona-conventions.yml
+- type: ErrorCatalog
+  url: errors/celona-problem-types.yml
+- type: Lifecycle
+  url: lifecycle/celona-lifecycle.yml
+- type: Conformance
+  url: conformance/celona-conformance.yml
+- type: Compliance
+  url: https://www.celona.io/security
+- type: TrustCenter
+  url: security/celona-trust-center.yml
+- type: Security
+  url: https://www.celona.io/security
+- type: VulnerabilityDisclosure
+  url: security/celona-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/celona-domain-security.yml
+- type: Webhooks
+  url: asyncapi/celona-events-webhooks.yml
+- type: MCPServer
+  url: mcp/celona-mcp.yml
+- type: LLMsTxt
+  url: llms/celona-llms.txt
+- type: AgentSkill
+  url: skills/_index.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

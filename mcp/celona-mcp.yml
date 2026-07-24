@@ -1,0 +1,42 @@
+generated: '2026-07-18'
+method: derived
+status: candidate
+source: http://docs.celona.io/en/collections/3911889-developer-documentation
+server:
+  name: celona
+  transport: http
+  description: >-
+    Candidate MCP server derived from the documented Celona Orchestrator REST
+    operations. Celona does not publish an official hosted MCP server; these tools
+    map one-to-one to real documented endpoints (X-API-Key auth). Not yet published.
+tools:
+- name: query_events
+  description: Query network events within a time interval with filtering and pagination.
+  source_operation: POST https://cso.celona.io/v2/api/events/query
+- name: list_event_contexts
+  description: Retrieve available search contexts for filtering events.
+  source_operation: GET https://cso.celona.io/v2/api/events/context
+- name: configure_event_notifications
+  description: Configure event notification behavior.
+  source_operation: POST https://api.celona.io/v1/api/events/configure
+- name: create_event_subscription
+  description: Subscribe to an event type notification (e.g. Slack).
+  source_operation: POST https://api.celona.io/v1/api/events/subscription
+- name: delete_event_subscription
+  description: Remove an event subscription.
+  source_operation: DELETE https://api.celona.io/v1/api/events/subscription
+- name: list_edge_nodes
+  description: List Edge cluster nodes with status, uptime, and network details.
+  source_operation: GET https://cso.celona.io/v1/api/cfgm/pses/{cluster_id}/nodes
+- name: list_access_points
+  description: List Access Points with status, uptime, and RF configuration.
+  source_operation: GET https://cso.celona.io/v1/api/cfgm/enodebs
+- name: get_access_point
+  description: Get an individual Access Point status by serial number.
+  source_operation: GET https://cso.celona.io/v1/api/cfgm/enodebs/{serial_number}
+- name: get_node_stats
+  description: Fetch Edge node CPU and memory utilization over a time range.
+  source_operation: GET https://cso.celona.io/v1/api/stats/nodeStats
+- name: get_audit_records
+  description: Fetch account audit log records over a time range.
+  source_operation: GET https://cso.celona.io/v1/api/audit/records

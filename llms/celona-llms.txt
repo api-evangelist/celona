@@ -1,0 +1,151 @@
+# Celona Help Center
+
+> 5G LAN Product Documentation
+
+## Celona Products Explained
+
+- [Introduction to Celona 5G LAN](http://docs.celona.io/en/articles/7131545-introduction-to-celona-5g-lan.md): 3-and 5-year software-as-a-service \(SaaS\) subscription to private wireless
+
+## Physical Installation of Celona Edge and Access Points
+
+- [Celona Edge - Installation Guide](http://docs.celona.io/en/articles/7131958-celona-edge-installation-guide.md): Let's get your Celona Edge Appliance deployed on your existing infrastructure
+- [Celona Access Points - Installation Guides](http://docs.celona.io/en/articles/7132137-celona-access-points-installation-guides.md): Let's get your Indoor / Outdoor Celona Access Points deployed on your existing infrastructure
+- [Accessories - Antennas, PTP Clock](http://docs.celona.io/en/articles/7132235-accessories-antennas-ptp-clock.md): Accessories for Access Points and Time Synchronization
+- [Celona AP21-48 to AP25-48 Hardware Transition FAQ](http://docs.celona.io/en/articles/12223568-celona-ap21-48-to-ap25-48-hardware-transition-faq.md): Product Lifecycle Transition from AP21-48 to AP25-48
+- [Celona Edge Enterprise to Edge Enterprise v2 Transition FAQ](http://docs.celona.io/en/articles/12274346-celona-edge-enterprise-to-edge-enterprise-v2-transition-faq.md)
+- [Celona 5G Airkit – Portable Private 5G Solution](http://docs.celona.io/en/articles/12328687-celona-5g-airkit-portable-private-5g-solution.md)
+- [Celona SKUs and Packaging Dimensions](http://docs.celona.io/en/articles/12543382-celona-skus-and-packaging-dimensions.md)
+- [Celona AP25-48 Installation Guide](http://docs.celona.io/en/articles/12739544-celona-ap25-48-installation-guide.md): How to Install AP25-48?
+
+## Getting Started with Celona 5G LAN
+
+- [Network Prerequisites - Firewall Configuration](http://docs.celona.io/en/articles/7131550-network-prerequisites-firewall-configuration.md): List of known ports & URLs that need to be opened for the Celona network
+- [Aerflex Network Prerequisites - Firewall Configuration and AP subnets](http://docs.celona.io/en/articles/11942576-aerflex-network-prerequisites-firewall-configuration-and-ap-subnets.md): List of known ports & URLs that need to be opened for the Celona network
+- [Network Prerequisites - Firewall Configuration \(Regional Deployment in Saudi Arabia\)](http://docs.celona.io/en/articles/11083216-network-prerequisites-firewall-configuration-regional-deployment-in-saudi-arabia.md): List of known ports & URLs that need to be opened for the Celona network - only for Saudi deployments
+- [Getting Started with Celona Aerflex](http://docs.celona.io/en/articles/11942596-getting-started-with-celona-aerflex.md): A streamlined deployment model for enterprise private cellular networks
+- [Edge IP address requirements - Pre 2406](http://docs.celona.io/en/articles/9935914-edge-ip-address-requirements-pre-2406.md)
+- [Edge IP address requirements - Post 2406](http://docs.celona.io/en/articles/9935918-edge-ip-address-requirements-post-2406.md)
+- [Managing Subscriptions and Assets in the Orchestrator](http://docs.celona.io/en/articles/7104059-managing-subscriptions-and-assets-in-the-orchestrator.md)
+- [User Administration and Role-based Access Control \(RBAC\)](http://docs.celona.io/en/articles/7132848-user-administration-and-role-based-access-control-rbac.md): Create and update user profiles with specific roles and permissions in the Orchestrator
+- [Multi Factor Authentication](http://docs.celona.io/en/articles/10708351-multi-factor-authentication.md)
+- [SSO \(Single sign-on\) Configuration Guide for IT Admins](http://docs.celona.io/en/articles/7132874-sso-single-sign-on-configuration-guide-for-it-admins.md): Setting up Single-Sign-on \(SSO\) to manage access to Orchestrator via your preferred IdP
+- [SSO Configuration on Okta](http://docs.celona.io/en/articles/10279674-sso-configuration-on-okta.md)
+- [SSO Configuration on Azure](http://docs.celona.io/en/articles/10275582-sso-configuration-on-azure.md)
+- [Software Upgrades](http://docs.celona.io/en/articles/9875831-software-upgrades.md)
+- [Edge Cluster Creation](http://docs.celona.io/en/articles/7132992-edge-cluster-creation.md): Zero-touch provisioning of Celona Edge OS and Edge nodes via the Orchestrator
+- [Setting up your Edge Appliance via the Local Edge Manager](http://docs.celona.io/en/articles/7132016-setting-up-your-edge-appliance-via-the-local-edge-manager.md): Using the Edge Appliance local management UI for initial setup
+- [Multi-node Edge Cluster Configuration for High Availability and Scaling](http://docs.celona.io/en/articles/7132039-multi-node-edge-cluster-configuration-for-high-availability-and-scaling.md): High availability, load balancing and fault tolerance for Celona Edge
+- [Edge Cluster States](http://docs.celona.io/en/articles/8466703-edge-cluster-states.md)
+- [\[US-CBRS\] Configuring your own Spectrum Access System \(SAS\)](http://docs.celona.io/en/articles/7133160-us-cbrs-configuring-your-own-spectrum-access-system-sas.md): Using Celona Orchestrator to configure your own SAS provider for CBRS spectrum access
+- [Create a New Site](http://docs.celona.io/en/articles/7133069-create-a-new-site.md): How to configure US and international sites
+- [Activating Celona Access Points](http://docs.celona.io/en/articles/7133150-activating-celona-access-points.md): Install and Configure your Celona Access Points
+- [Access Point States](http://docs.celona.io/en/articles/7132277-access-point-states.md): Monitoring Celona Access Point states on the Orchestrator
+- [Time Sync Configuration](http://docs.celona.io/en/articles/7133111-time-sync-configuration.md): Time Sync configuration options available depending on type of deployment
+- [Celona PTP Guidelines and Best Practices](http://docs.celona.io/en/articles/10581128-celona-ptp-guidelines-and-best-practices.md)
+- [Access Point Configurations](http://docs.celona.io/en/articles/7133161-access-point-configurations.md): Customize and monitor Advanced configurations on your Access Point
+- [AP2x LLDP Power Management](http://docs.celona.io/en/articles/10269670-ap2x-lldp-power-management.md)
+- [\[US-CBRS\] Spectrum Access System \(SAS\) Registration Scheduler](http://docs.celona.io/en/articles/7133159-us-cbrs-spectrum-access-system-sas-registration-scheduler.md): Learn to schedule SAS registration to coincide with planned maintenance
+- [FAQ - Spectrum Access System \(SAS\)](http://docs.celona.io/en/articles/6432666-faq-spectrum-access-system-sas.md): FAQ on Spectrum Access System \(SAS\) triggered Suspension and Termination events and expected behavior on the Celona network.
+- [MSP \(Managed Service Provider\) Configuration](http://docs.celona.io/en/articles/7133165-msp-managed-service-provider-configuration.md): Using the managed service provider multi-tenant dashboard
+- [Intelligent 5G LAN Routing Architecture](http://docs.celona.io/en/articles/7159655-intelligent-5g-lan-routing-architecture.md): Network Domain configuration options
+- [Network Domain Configuration](http://docs.celona.io/en/articles/7133029-network-domain-configuration.md): Translate cellular wireless to existing enterprise network resources for L2/L3 traffic forwarding
+- [Network Domain Configuration - Pre 2406](http://docs.celona.io/en/articles/9936077-network-domain-configuration-pre-2406.md): Translate cellular wireless to existing enterprise network resources for L2/L3 traffic forwarding
+- [MicroSlicing Configuration](http://docs.celona.io/en/articles/7159638-microslicing-configuration.md): Per-device, Per-application level QoS policy definition and enforcement
+- [MicroSlicing in Action - IP Cameras](http://docs.celona.io/en/articles/7131464-microslicing-in-action-ip-cameras.md): MicroSlice configuration and a description of the MicroSlicing parameters in Celona's 4G and 5G Networks
+- [Configure Static IP for 5G APs](http://docs.celona.io/en/articles/9921966-configure-static-ip-for-5g-aps.md): This guide outlines the steps to configure a static IP, Network Time Protocol \(NTP\) server, and DNS server on 5G APs through the CLI
+- [Manual Channel and PCI Configuration Guide](http://docs.celona.io/en/articles/11787634-manual-channel-and-pci-configuration-guide.md): Configure center frequencies and Physical Cell Identities \(PCI\) for 4G and 5G Access Points \(APs\) during site creation or editing.
+- [eSIM Activation Guide](http://docs.celona.io/en/articles/8540022-esim-activation-guide.md)
+- [Device Profile Configuration](http://docs.celona.io/en/articles/7131006-device-profile-configuration.md): Configuring and managing device groups
+- [Physical SIM Activation Guide](http://docs.celona.io/en/articles/10122003-physical-sim-activation-guide.md)
+- [Celona SIM Lifecycle Management](http://docs.celona.io/en/articles/7132329-celona-sim-lifecycle-management.md): SIM Provisioning, Activation and SIM states
+- [eSIM onboarding guide for Android devices](http://docs.celona.io/en/articles/12314152-esim-onboarding-guide-for-android-devices.md): Activate and install a Celona eSIM onto your Android device
+
+## Celona Aerloc
+
+- [“Airgap” between IT & OT traffic](http://docs.celona.io/en/articles/9931058-airgap-between-it-ot-traffic.md): Ensure policy-based physical separation of IT and OT traffic on Celona 5G LAN
+- [Network Access Control \(NAC\) Integration - Aruba ClearPass](http://docs.celona.io/en/articles/9967637-network-access-control-nac-integration-aruba-clearpass.md): Aruba ClearPass integration to automate authorization of Private Cellular Devices on Celona 5G LAN
+- [Network Access Control \(NAC\) Integration - Cisco ISE](http://docs.celona.io/en/articles/9844872-network-access-control-nac-integration-cisco-ise.md): Cisco ISE integration to automate authorization of Private Cellular Devices on Celona 5G LAN
+- [Palo Alto Networks - Firewall Integration Guide \(with Cortex XSOAR\)](http://docs.celona.io/en/articles/11329172-palo-alto-networks-firewall-integration-guide-with-cortex-xsoar.md)
+- [Palo Alto Networks -Firewall Integration Guide \(without Cortex XSOAR\)](http://docs.celona.io/en/articles/11465382-palo-alto-networks-firewall-integration-guide-without-cortex-xsoar.md)
+
+## Advanced 5G LAN Features
+
+- [Setting up Static IP Address for device](http://docs.celona.io/en/articles/7831113-setting-up-static-ip-address-for-device.md): Workflow to onboard devices with static IP address on Celona Private 4G/5G network
+- [Advanced Network Configuration](http://docs.celona.io/en/articles/7976769-advanced-network-configuration.md): How to configure advanced n/w configuration policies such as Layer-2 GRE/VxLAN tunnels, IP Multicasting, & Supernetting for cellular devices
+- [Enabling intelligent 5G LAN routing for devices behind cellular gateways/routers using Supernetting](http://docs.celona.io/en/articles/8660555-enabling-intelligent-5g-lan-routing-for-devices-behind-cellular-gateways-routers-using-supernetting.md)
+- [Support for real-time industrial Ethernet protocols - PROFINET](http://docs.celona.io/en/articles/8110556-support-for-real-time-industrial-ethernet-protocols-profinet.md)
+- [Multi-Operator Cellular Support](http://docs.celona.io/en/articles/9853127-multi-operator-cellular-support.md): Overview of multi-operator architecture; View status of multi-operator operation and metrics
+- [Running Celona Edge on VMware ESXi](http://docs.celona.io/en/articles/9853137-running-celona-edge-on-vmware-esxi.md)
+
+## Network Monitoring
+
+- [Device Experience](http://docs.celona.io/en/articles/7834894-device-experience.md)
+- [Monitoring Network Events in Celona Orchestrator](http://docs.celona.io/en/articles/7731306-monitoring-network-events-in-celona-orchestrator.md)
+- [Alerts & Notifications](http://docs.celona.io/en/articles/7828547-alerts-notifications.md)
+- [Device Fingerprinting via IMEI](http://docs.celona.io/en/articles/7960963-device-fingerprinting-via-imei.md)
+- [Device Activity Monitoring - per Site, per AP, per Edge Cluster](http://docs.celona.io/en/articles/8663670-device-activity-monitoring-per-site-per-ap-per-edge-cluster.md)
+- [Aggregated events and alerts based on KPI thresholds](http://docs.celona.io/en/articles/8668395-aggregated-events-and-alerts-based-on-kpi-thresholds.md)
+- [Network Topology of a Device](http://docs.celona.io/en/articles/9875733-network-topology-of-a-device.md)
+
+## Support and Diagnostics
+
+- [Support Guide: Celona Domain Proxy events](http://docs.celona.io/en/articles/8475673-support-guide-celona-domain-proxy-events.md): Support Guide for SAS-Celona Domain Proxy Communication Events
+- [Support Guide: Access Point Time Synchronization Events](http://docs.celona.io/en/articles/8475924-support-guide-access-point-time-synchronization-events.md): Support Guide for Access Point PTP and GNSS based time snchronization events
+- [Support and warranty for Celona products](http://docs.celona.io/en/articles/7133166-support-and-warranty-for-celona-products.md)
+- [Support Guide: Celona Edge Events](http://docs.celona.io/en/articles/8664066-support-guide-celona-edge-events.md): Support Guide for Edge Cluster Events
+- [Audit Trail Feature in CSO](http://docs.celona.io/en/articles/10328398-audit-trail-feature-in-cso.md)
+- [Diagnostic Tools](http://docs.celona.io/en/articles/11557683-diagnostic-tools.md): Troubleshooting tool on Celona Orchestrator
+
+## Developer Documentation
+
+- [Introduction to Celona APIs](http://docs.celona.io/en/articles/5471140-introduction-to-celona-apis.md): API library overview and documentation
+- [Celona Network Monitoring API: How To](http://docs.celona.io/en/articles/5467418-celona-network-monitoring-api-how-to.md): Step-by-step instructions on using Celona's monitoring API
+- [Celona Network Monitoring API: Alerts Status Codes](http://docs.celona.io/en/articles/6372155-celona-network-monitoring-api-alerts-status-codes.md): Example data, status codes, contexts & descriptions
+- [Celona Network Monitoring API: Integration with Slack](http://docs.celona.io/en/articles/6369035-celona-network-monitoring-api-integration-with-slack.md): Interrupt \(vs. polling\) event processing for monitoring your Celona network with Slack notifications
+- [Celona Network Monitoring API: Integration with Elgato Stream Deck](http://docs.celona.io/en/articles/6335959-celona-network-monitoring-api-integration-with-elgato-stream-deck.md): Easily implement API calls for at-a-glance Celona network status
+- [API endpoints for events](http://docs.celona.io/en/articles/7828531-api-endpoints-for-events.md): API endpoints to fetch various events
+- [API endpoints for device experience](http://docs.celona.io/en/articles/7830370-api-endpoints-for-device-experience.md)
+- [Restrict API access to specific Device Groups](http://docs.celona.io/en/articles/8096652-restrict-api-access-to-specific-device-groups.md)
+- [API Endpoints for System status](http://docs.celona.io/en/articles/9894357-api-endpoints-for-system-status.md): API endpoints to fetch various Edge and Access Point status details like CPU, Memory or Uptime.
+- [API endpoint for Audit logs](http://docs.celona.io/en/articles/13159510-api-endpoint-for-audit-logs.md): API endpoint to fetch audit logs
+- [Events API Documentation](http://docs.celona.io/en/articles/13613033-events-api-documentation.md): REST API for querying, filtering, and retrieving real-time and historical network events across Celona network infrastructure.
+
+## Performance metrics of Celona networks
+
+- [Coverage metrics for private 4G](http://docs.celona.io/en/articles/4113990-coverage-metrics-for-private-4g.md): Indoor and outdoor CBRS based 4G coverage characteristics
+- [Performance metrics for private 4G](http://docs.celona.io/en/articles/4113973-performance-metrics-for-private-4g.md): Download and upload throughput limits on CBRS based 4G wireless
+- [Outdoor private 4G performance data](http://docs.celona.io/en/articles/4901171-outdoor-private-4g-performance-data.md): Testing CBRS based 4G with indoor and outdoor CPEs
+- [Private Cellular and Wi-Fi: Performance](http://docs.celona.io/en/articles/4808444-private-cellular-and-wi-fi-performance.md): Reminder on how Private Cellular and Wi-Fi compare on radio / wireless coverage and capacity
+- [Private Cellular and Wi-Fi: Security](http://docs.celona.io/en/articles/6455132-private-cellular-and-wi-fi-security.md): Comparing private cellular and Wi-Fi for enterprise network security
+
+## Applications & Celona certified devices
+
+- [Celona 5G LAN Certified Devices](http://docs.celona.io/en/articles/7045942-celona-5g-lan-certified-devices.md)
+- [Apple iOS Geofencing for automatically toggling a Celona SIM](http://docs.celona.io/en/articles/11500143-apple-ios-geofencing-for-automatically-toggling-a-celona-sim.md)
+- [Apple iPhone / iPad on Celona](http://docs.celona.io/en/articles/4055569-apple-iphone-ipad-on-celona.md): Basic connectivity and Wi-Fi hotspot functionality
+- [Apple iPhone on Celona](http://docs.celona.io/en/articles/5173719-apple-iphone-on-celona.md): Basic configuration and steps for private cellular connectivity
+- [Apple iOS with Dual SIM on Celona](http://docs.celona.io/en/articles/4134060-apple-ios-with-dual-sim-on-celona.md): Steps to enable both public and private mobile network access
+- [Apple iOS Field Test Mode](http://docs.celona.io/en/articles/11159852-apple-ios-field-test-mode.md)
+- [Microsoft HoloLens 2 Headset on Celona](http://docs.celona.io/en/articles/5132236-microsoft-hololens-2-headset-on-celona.md): Running Microsoft Teams Remote Assist on private LTE
+- [Realwear Headset on Celona](http://docs.celona.io/en/articles/5097508-realwear-headset-on-celona.md): Hands-free real-time collaboration with Microsoft Teams
+- [Samsung S21 5G on Celona](http://docs.celona.io/en/articles/5905793-samsung-s21-5g-on-celona.md): Single platform, many models for more flexible mobile networking
+- [Zebra L10 tablet on Celona](http://docs.celona.io/en/articles/5134019-zebra-l10-tablet-on-celona.md): Configuration steps and performance on CBRS based private LTE
+- [Zebra TC26 on Celona](http://docs.celona.io/en/articles/5171218-zebra-tc26-on-celona.md): Configuration steps to enable CBRS private LTE connectivity
+- [Zebra ET85 on Celona](http://docs.celona.io/en/articles/6308306-zebra-et85-on-celona.md)
+- [Dell Latitude 7030 on Celona](http://docs.celona.io/en/articles/11826240-dell-latitude-7030-on-celona.md)
+- [Celona on Starlink satellite internet](http://docs.celona.io/en/articles/5936816-celona-on-starlink-satellite-internet.md): Local private cellular network with low-orbit satellite internet backhaul
+- [Cradlepoint Routers on Celona](http://docs.celona.io/en/articles/4055601-cradlepoint-routers-on-celona.md): Out of the box experience and basic connectivity
+- [Cradlepoint and Celona: Enterprise Network Integration](http://docs.celona.io/en/articles/4630207-cradlepoint-and-celona-enterprise-network-integration.md): A unique example of traffic management via Celona CBRS network
+- [Cradlepoint IP Passthrough with Celona IP Domains](http://docs.celona.io/en/articles/5669584-cradlepoint-ip-passthrough-with-celona-ip-domains.md): How to configure Cradlepoint cellular gateways to integrate with Celona External IP Domains.
+- [Introduction: Video on Celona Private LTE](http://docs.celona.io/en/articles/4841348-introduction-video-on-celona-private-lte.md): Comparing different video applications on your mobile network
+- [CCTV and Video Surveillance Basics](http://docs.celona.io/en/articles/4841363-cctv-and-video-surveillance-basics.md): How does it work and what are the performance requirements?
+- [How much bandwidth does video consume?](http://docs.celona.io/en/articles/4841357-how-much-bandwidth-does-video-consume.md): Translating different bit rates on network capacity requirements
+- [Celona MicroSlicing and Video Surveillance](http://docs.celona.io/en/articles/4901693-celona-microslicing-and-video-surveillance.md): Configuration steps to enforce throughput SLA on real-time video
+- [Celona MicroSlicing and Zoom Video](http://docs.celona.io/en/articles/4841374-celona-microslicing-and-zoom-video.md): Configuration steps to enforce QoS for Zoom video calls
+
+## Sales Enablement
+
+- [Link of Links](http://docs.celona.io/en/articles/8528584-link-of-links.md): Celona 5G LAN Sales-friendly documents
+- [Security FAQ](http://docs.celona.io/en/articles/8487819-security-faq.md)
+- [Neutral Host - FAQ](http://docs.celona.io/en/articles/8381197-neutral-host-faq.md): Frequently Asked Questions
+- [AerFlex - FAQ](http://docs.celona.io/en/articles/11934180-aerflex-faq.md): Frequently asked questions

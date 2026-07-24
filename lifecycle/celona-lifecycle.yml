@@ -1,0 +1,34 @@
+generated: '2026-07-18'
+method: searched
+source: http://docs.celona.io/en/articles/7828531-api-endpoints-for-events
+versioning:
+  scheme: uri-path
+  versions: [v1, v2]
+  current: v2
+  docs: http://docs.celona.io/en/articles/13613033-events-api-documentation
+deprecation:
+  documented: true
+  policy_url: http://docs.celona.io/en/articles/7828531-api-endpoints-for-events
+  notes: >-
+    The v1 events endpoints (POST /v1/api/stats/events/site, /ap, /device, /edge)
+    are documented as deprecated in favor of the v2 Events API (POST
+    /v2/api/events/query). The dpalert and ptpstate event categories are being
+    discontinued for the Events v1 API starting in release 2025.1; the v2 API is
+    unaffected.
+  sunset_header: false
+deprecated_operations:
+- POST /v1/api/stats/events/site
+- POST /v1/api/stats/events/ap
+- POST /v1/api/stats/events/device
+- POST /v1/api/stats/events/edge
+status_page: https://status.celona.io
+status_page_provider: Atlassian Statuspage
+status_components:
+- Production Orchestrator (Web Portal, API, Stats/Events, Alerts/Notifications)
+- Global Orchestrator (Portal, API)
+- Regional Orchestrator (Portal, API Gateway, Stats/Events, Alerts/Notifications)
+release_scheme:
+  style: calendar-versioned
+  example: '2025.1'
+sla:
+  documented: false

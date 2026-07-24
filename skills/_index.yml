@@ -1,0 +1,21 @@
+generated: '2026-07-18'
+method: generated
+source: http://docs.celona.io/en/collections/3911889-developer-documentation
+skills:
+- file: celona-query-network-events.md
+  name: Query Celona network events
+  api: Celona API
+  operations:
+  - POST /v2/api/events/query
+  - GET /v2/api/events/context
+- file: celona-subscribe-to-alerts.md
+  name: Subscribe to Celona network alerts
+  api: Celona API
+  operations:
+  - POST /v1/api/events/subscription
+  - DELETE /v1/api/events/subscription
+- file: celona-fetch-audit-logs.md
+  name: Fetch Celona account audit logs
+  api: Celona API
+  operations:
+  - GET /v1/api/audit/records

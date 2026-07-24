@@ -1,0 +1,39 @@
+generated: '2026-07-18'
+method: probed
+source: live probes of celona.io / api.celona.io / cso.celona.io / docs.celona.io
+notes: >-
+  No genuine /.well-known discovery documents were served. The api.celona.io and
+  cso.celona.io hosts return HTTP 200 for /.well-known/* paths, but the body is the
+  Celona Orchestrator single-page-app HTML shell (a catch-all route), not a valid
+  security.txt, OpenID, or OAuth metadata document. These are recorded as
+  spa-shell rather than genuine 200s, so no raw well-known files were saved.
+hosts:
+- host: https://www.celona.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://api.celona.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    result: spa-shell
+    note: returns Celona Orchestrator app HTML, not a security.txt
+- host: https://cso.celona.io
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    result: spa-shell
+    note: returns Celona Orchestrator app HTML, not OIDC metadata
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    result: spa-shell
+    note: returns Celona Orchestrator app HTML, not OAuth metadata
+  - path: /.well-known/security.txt
+    status: 200
+    result: spa-shell
+security_contact:
+  note: security@celona.io is published on https://www.celona.io/security (not via security.txt)

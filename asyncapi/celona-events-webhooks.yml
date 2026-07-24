@@ -1,0 +1,48 @@
+generated: '2026-07-18'
+method: searched
+type: Webhooks
+source: http://docs.celona.io/en/articles/6369035-celona-network-monitoring-api-integration-with-slack
+summary: >-
+  Celona's Network Monitoring / Events API supports interrupt-style (push) event
+  processing via subscriptions, as an alternative to polling. Subscriptions deliver
+  network alert and status events to notification targets such as Slack. Managed
+  through the v1 events subscription endpoints; events are also queryable through
+  the v2 Events API.
+delivery:
+  model: subscription-push
+  auth: X-API-Key
+  manage_endpoints:
+  - POST https://api.celona.io/v1/api/events/configure
+  - POST https://api.celona.io/v1/api/events/subscription
+  - DELETE https://api.celona.io/v1/api/events/subscription
+  subscription_example:
+    event_type: MEMORYALERT
+    notify_type: slack
+  notify_types:
+  - slack
+event_types:
+- code: APSTATUS
+  description: Access Point status (Unknown/New/Pending/Provisioned/Up/Down/Deployed).
+- code: DEVICESTATUS
+  description: Device (UE) lifecycle status (Unknown/New/Provisioned/Activated/Deactivated/Connected/Idle/Disconnected/Blocked).
+- code: UEALERT
+  description: UE attach/authentication alerts (INVALIDPLMNID, IMSINOTPRESENT, IMSIAUTHFAIL, IMSIATTACHFAIL).
+- code: DPALERT
+  description: Data plane / spectrum alerts (SUSPENDEDSTATE, TERMINATEDSTATE, NOSPECTRUM, CPIERROR, CBSDBLACKLIST, FORCEDREREGISTER). Discontinued for Events v1 API in release 2025.1.
+- code: CPUALERT
+  description: Triggers when average CPU utilization exceeds 70%.
+- code: MEMORYALERT
+  description: Triggers when average memory utilization exceeds 80%.
+- code: EDGESTATUS
+  description: Edge status (New/Pending/Provisioned/Up/Down/Unreachable).
+- code: PTPSTATE
+  description: PTP/GPS time-sync state. Discontinued for Events v1 API in release 2025.1.
+- code: UDPFDHCPTIMEOUT
+  description: DHCP timeout warning.
+- code: NHSTATUS
+  description: Neutral Host status (MNO/AP IPSec and S1-C/S1-U states).
+- code: SITEAVAILABILITYALERT
+  description: Site availability alert (CRITICAL).
+- code: RECURRINGPODCRASHALERT
+  description: Recurring pod crash alert (CRITICAL).
+severities: [INFO, WARN, ERROR, CRITICAL]
