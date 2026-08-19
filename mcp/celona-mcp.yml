@@ -5,10 +5,9 @@ source: http://docs.celona.io/en/collections/3911889-developer-documentation
 server:
   name: celona
   transport: http
-  description: >-
-    Candidate MCP server derived from the documented Celona Orchestrator REST
-    operations. Celona does not publish an official hosted MCP server; these tools
-    map one-to-one to real documented endpoints (X-API-Key auth). Not yet published.
+  description: Candidate MCP server derived from the documented Celona Orchestrator REST operations. Celona
+    does not publish an official hosted MCP server; these tools map one-to-one to real documented endpoints
+    (X-API-Key auth). Not yet published.
 tools:
 - name: query_events
   description: Query network events within a time interval with filtering and pagination.
@@ -40,3 +39,9 @@ tools:
 - name: get_audit_records
   description: Fetch account audit log records over a time range.
   source_operation: GET https://cso.celona.io/v1/api/audit/records
+deployment:
+  mode: none
+  verified: derived
+  tools: 10
+  checked: '2026-08-12'
+  source: catalog MCP census
